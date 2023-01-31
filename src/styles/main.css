@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+/* Skip Elemen */
+.skip-link {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  padding: 8px;
+  background-color: #00aa95;
+  border: #00aa95;
+  text-decoration: none;
+  color: white;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+/* Navbar */
+header {
+  position: sticky;
+  top: 0;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 5px 15px 5px 15px;
+}
+
+.nav-logo > img {
+  width: 100%;
+}
+.nav-logo {
+  margin: auto 0 auto 0;
+}
+.nav-menu {
+  margin: auto 0 auto 0;
+  text-align: right;
+}
+.menu-item {
+  display: inline-block;
+  padding: 13px;
+}
+.menu-item a {
+  color: #00aa95;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 11px;
+}
+.menu-item > a:hover {
+  text-decoration: underline;
+}
+.menu-icon {
+  color: #00aa95;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 50px 24px 24px 24px;
+  line-height: 70px;
+  font-size: 25px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Jumbotron - Hero Element */
+hero-elemen {
+  width: 100%;
+}
+hero-elemen > img {
+  width: 100%;
+  max-height: 500px;
+}
+
+/* Restaurant Catalog */
+restaurant-list {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+restaurant-item {
+  margin: 16px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.title-content a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #0e0e0e;
+  min-width: 44px;
+  min-width: 44px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.title-content a:hover {
+  color: #00aa95;
+}
+.content {
+  padding: 0px 15px 15px 15px;
+}
+.subtitle-content {
+  font-weight: 500;
+}
+.fa-star {
+  color: #ebc801;
+}
+.image-content {
+  width: 100%;
+  height: 230px;
+}
+.description-content {
+  text-align: justify;
+  font-weight: 300;
+}
+/* Footer */
+footer {
+  background: #00aa95;
+  text-align: center;
+  color: #ffffff;
+  padding: 30px;
+  bottom: 0px;
+}

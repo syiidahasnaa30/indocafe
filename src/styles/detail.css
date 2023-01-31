@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+.img-detail-page {
+  width: 100%;
+}
+#detail-title {
+  margin: 20px 20px 20px 20px;
+}
+.btn-favorite {
+  background-color: #00cc76;
+  color: white;
+  min-height: 44px;
+  min-width: 44px;
+  border: none;
+  border-radius: 5px;
+  margin: 0px 20px 0px 20px;
+}
+.btn-favorite :hover {
+  background-color: #00aa95;
+}
+.fa-thumbs-up,
+.fa-thumbs-down {
+  font-size: 20px;
+}
+.fa-star {
+  color: #ebc801;
+}
+.fa-location-dot {
+  color: #e10505;
+  font-size: 25px;
+}
+.section-rating-map {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 16px 20px 16px 20px;
+}
+.section-rating {
+  padding: 16px;
+  background-color: #e1f3f0;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+}
+.section-map {
+  padding: 16px;
+  background-color: #e1f3f0;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.description {
+  text-align: justify;
+  font-weight: 300;
+  margin: 0px 20px 20px 20px;
+}
+tags-element {
+  margin: 20px;
+}
+.tag {
+  box-sizing: border-box;
+  background: #e1f3f0;
+  border: 1px solid #00cc76;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.menu-section {
+  margin: 20px 20px 20px 20px;
+}
+resto-menu > img {
+  width: 100%;
+}
+resto-menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+resto-menu {
+  margin: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+resto-menu::marker {
+  color: white;
+}
+.name-menu {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: 600;
+}
+.review-section {
+  margin: 0px 20px 20px 20px;
+}
+
+reviews-element {
+  /* background-color: #e1f3f0; */
+  padding: 0px 16px 16px 16px;
+}
+review-element {
+  border-color: #999;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 0px 16px 16px 16px;
+}
+review-element img {
+  width: 50px;
+  height: 50px;
+  padding: 16px;
+}
+
+.reviewer-image {
+  margin: 10px;
+  text-align: center;
+}
+.review-content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.reviewer-name {
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.review-date {
+  font-size: 12px;
+  color: #999;
+  margin-top: 0px;
+}
+.content-of-review {
+  margin-top: 0px;
+  font-weight: 400;
+}
+
+.create-review {
+  background-color: #00cc76;
+  color: white;
+  padding: 10px;
+  min-height: 44px;
+  min-width: 44px;
+  border: none;
+  border-radius: 5px;
+}

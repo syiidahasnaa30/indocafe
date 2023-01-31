@@ -1,0 +1,28 @@
+.hero-element {
+  width: 100%;
+  text-align: center;
+}
+.hero-element > img {
+  border-radius: 50%;
+}
+.search-container {
+  padding: 50px;
+}
+#keyword {
+  min-height: 44px;
+  min-width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  border-color: #999;
+  border-width: 1px;
+}
+.searchButton {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px;
+  color: white;
+  background-color: #00cc76;
+  border-style: none;
+}
