@@ -5,7 +5,7 @@ import "../components/restaurant-list";
 const Home = {
   async render() {
     return `
-      <hero-elemen id="hero"></hero-elemen>
+      <hero-element id="hero" class="hero-element"></hero-element>
       <restaurant-list></restaurant-list>
     `;
   },

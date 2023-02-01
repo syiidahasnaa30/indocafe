@@ -63,11 +63,17 @@
   }
 }
 @media screen and (min-width: 750px) {
+  .search-content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
   .resto-header {
     display: flex;
     margin-top: 30px;
     margin-bottom: 50px;
   }
+
   .img-detail-page {
     width: 200px;
     height: 200px;
