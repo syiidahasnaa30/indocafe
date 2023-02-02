@@ -1,0 +1,27 @@
+body {
+  background-color: #d8fdf9;
+}
+.review-form {
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+.review-form > #name,
+#review {
+  margin: 5px;
+  min-width: 44px;
+  border-radius: 5px;
+  border-color: #00cc76;
+  padding: 16px;
+}
+.button-submit-review {
+  margin: 5px;
+  min-height: 44px;
+  min-width: 44px;
+  background-color: #00cc76;
+  border-style: none;
+  border-radius: 5px;
+  color: #ffffff;
+}

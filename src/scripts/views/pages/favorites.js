@@ -5,7 +5,7 @@ const Favorites = {
   async render() {
     return `
           <h2 style="margin:20px">Your Favorite Movie</h2>
-          <restaurant-list></restaurant-list>
+          <restaurant-list style="min-height:65vh"></restaurant-list>
         `;
   },
 

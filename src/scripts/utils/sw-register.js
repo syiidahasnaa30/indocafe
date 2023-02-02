@@ -11,7 +11,7 @@ const swRegister = async () => {
   try {
     // await navigator.serviceWorker.register("./sw.bundle.js");
     await wb.register();
-    console.log("Service worker registered");
+    // console.log("Service worker registered");
   } catch (error) {
     console.log("Failed to register service worker", error);
   }

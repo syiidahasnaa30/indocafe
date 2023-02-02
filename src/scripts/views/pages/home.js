@@ -11,9 +11,31 @@ const Home = {
   },
   async afterRender() {
     const listRestaurantElement = document.querySelector("restaurant-list");
-    const restaurants = await RestaurantData.getRestaurants();
+    const inputKeyword = document.querySelector("#keyword");
+    const buttonSearch = document.querySelector(".searchButton");
+    const keyword = inputKeyword.value;
+
+    let restaurants = await RestaurantData.getRestaurants();
     listRestaurantElement.restaurants = restaurants;
-    console.log(restaurants);
+    // document.addEventListener("DOMContentLoaded", async () => {
+    //   let restaurants = await RestaurantData.getRestaurants();
+    //   listRestaurantElement.restaurants = restaurants;
+    // });
+    // if (keyword == "" || keyword == null) {
+    //   listRestaurantElement.restaurants = restaurants;
+    // }
+    // await buttonSearch.addEventListener("click", async (e) => {
+    //   if (keyword.length > 0) {
+    //     listRestaurantElement.restaurants = await RestaurantData.search(
+    //       keyword
+    //     );
+    //   } else {
+    //     listRestaurantElement.restaurants = restaurants;
+    //   }
+    //   console.log("MASUK");
+    //   e.preventDefault();
+    // });
+    // });
   },
 };
 

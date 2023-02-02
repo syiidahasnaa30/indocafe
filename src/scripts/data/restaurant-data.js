@@ -13,6 +13,12 @@ class RestaurantData {
     const responseJSON = await response.json();
     return responseJSON.restaurant;
   }
+
+  static async search(query) {
+    const response = await fetch(API_ENDPOINT.search(query));
+    const responseJSON = await response.json();
+    return responseJSON.restaurants;
+  }
 }
 
 export default RestaurantData;
