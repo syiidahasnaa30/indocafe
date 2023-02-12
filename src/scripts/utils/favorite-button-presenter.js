@@ -1,11 +1,11 @@
-import FavoriteResto from "../data/favorite-resto";
 import "../views/components/like-button";
 import "../views/components/unlike-button";
 
 const FavoriteButtonInitiator = {
-  async init({ favoriteButtoncContainer, restaurant }) {
+  async init({ favoriteButtoncContainer, favoriteResto, restaurant }) {
     this._favoriteButtonContainer = favoriteButtoncContainer;
     this._restaurant = restaurant;
+    this._favoriteResto = favoriteResto;
 
     await this.render();
   },
@@ -21,7 +21,7 @@ const FavoriteButtonInitiator = {
   },
 
   async isRestaurantExist(id) {
-    const restaurant = await FavoriteResto.getResto(id);
+    const restaurant = await this._favoriteResto.getResto(id);
     return !!restaurant;
   },
 
@@ -30,7 +30,7 @@ const FavoriteButtonInitiator = {
 
     const favoriteButton = document.querySelector("#add-favorite-button");
     favoriteButton.addEventListener("click", async () => {
-      await FavoriteResto.putResto(this._restaurant);
+      await this._favoriteResto.putResto(this._restaurant);
       this.render();
     });
   },
@@ -40,7 +40,7 @@ const FavoriteButtonInitiator = {
 
     const favoriteButton = document.querySelector("#btn-remove-favorite");
     favoriteButton.addEventListener("click", async () => {
-      await FavoriteResto.deleteResto(this._restaurant.id);
+      await this._favoriteResto.deleteResto(this._restaurant.id);
       this.render();
     });
   },

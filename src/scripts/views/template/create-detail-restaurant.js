@@ -2,7 +2,7 @@ import CONFIG from "../../globals/config";
 import "../components/resto-menu-list";
 import "../components/reviews";
 import FavoriteButtonInitiator from "../../utils/favorite-button-presenter";
-
+import FavoriteResto from "../../data/favorite-resto";
 const createDetailRestaurant = {
   async init(detailContainer, restaurant) {
     this._detailContainer = detailContainer;
@@ -75,6 +75,7 @@ const createDetailRestaurant = {
 
     FavoriteButtonInitiator.init({
       favoriteButtoncContainer: document.querySelector(favoriteButon),
+      favoriteResto: FavoriteResto,
       restaurant: {
         id: this._restaurant.id,
         name: this._restaurant.name,
