@@ -7,8 +7,9 @@ class SearchElement extends HTMLElement {
     this.innerHTML = `
     <form class="search-content" action="">
     <input
+      tabindex="0"
       type="text"
-      placeholder="Input the keyword to search"
+      placeholder="Search restaurant by it's name, category or menu"
       name="keyword"
       id="keyword"
     />

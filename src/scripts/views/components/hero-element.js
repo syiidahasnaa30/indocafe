@@ -8,9 +8,12 @@ class HeroElement extends HTMLElement {
     this.innerHTML = `
     <div class="content-hero">
     <div class="logo-container">
-      <img class="logo" src="./images/logo-only.png" alt="Indocafe logo brand" />
-      <h1 style="color: #00aa95; font-weight: 600">Indocafe</h1>
-      <p style="color: white; font-weight: 600">
+      <img tabindex="0" 
+        class="logo" 
+        src="./images/logo-only.png" 
+        alt="Indocafe logo" />
+      <h1 tabindex="0" style="color: #00aa95; font-weight: 600">Indocafe</h1>
+      <p tabindex="0" style="color: white; font-weight: 600">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
         suscipit.
       </p>

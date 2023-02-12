@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
 body {
   font-family: "Poppins", sans-serif;
   padding: 0px;
@@ -129,6 +130,11 @@ restaurant-item {
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+restaurant-item .rating-map {
+  display: flex;
+  justify-content: space-between;
+}
 .title-content a {
   text-decoration: none;
   font-size: 25px;
@@ -146,6 +152,7 @@ restaurant-item {
 }
 .subtitle-content {
   font-weight: 500;
+  margin: 0px;
 }
 .fa-star {
   color: #ebc801;

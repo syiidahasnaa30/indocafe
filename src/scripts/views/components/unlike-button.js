@@ -4,7 +4,7 @@ class UnlikeButton extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = `<button class="btn-favorite">
+    this.innerHTML = `<button class="btn-favorite" id="btn-remove-favorite">
       Move from favorite <i class="fa-solid fa-thumbs-down"></i>
     </button>
       `;

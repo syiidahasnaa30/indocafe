@@ -14,6 +14,9 @@
   border-radius: 5px;
   margin: 0px 20px 0px 20px;
 }
+.btn-remove-favorite {
+  margin-left: 44px;
+}
 .btn-favorite :hover {
   background-color: #00aa95;
 }
@@ -26,7 +29,7 @@
 }
 .fa-location-dot {
   color: #e10505;
-  font-size: 25px;
+  font-size: 20px;
 }
 .section-rating-map {
   display: grid;
@@ -52,7 +55,7 @@
   font-weight: 300;
   margin: 0px 20px 20px 20px;
 }
-tags-element {
+.tagsElement {
   margin: 20px;
 }
 .tag {

@@ -1,18 +1,20 @@
-import "../components/restaurant-list";
-import FavoriteResto from "../../data/favorite-resto";
+import FavoritePageInitiator from "../../utils/favorite-page-initiator";
 
 const Favorites = {
   async render() {
-    return `
-          <h2 style="margin:20px">Your Favorite Movie</h2>
-          <restaurant-list style="min-height:65vh"></restaurant-list>
+    return `         
+          <h1 tabindex="0" class="favorite-pages">
+          Your Favorite Restaurants
+          </h1>          
+          <div id="content-favorite-page" style="min-height:70vh"></div>
         `;
   },
 
   async afterRender() {
-    const listRestaurantElement = document.querySelector("restaurant-list");
-    const restaurants = await FavoriteResto.getAllRestaurant();
-    listRestaurantElement.restaurants = restaurants;
+    const contentFavoritePage = document.querySelector(
+      "#content-favorite-page"
+    );
+    FavoritePageInitiator.init(contentFavoritePage);
   },
 };
 export default Favorites;

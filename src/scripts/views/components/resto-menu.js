@@ -5,7 +5,9 @@ class RestoMenu extends HTMLElement {
   }
   render() {
     this.innerHTML = `
-        <img tabindex="0" src="./images/beverages.png" alt="" />
+        <img tabindex="0" 
+          src="./images/beverages.png" 
+          alt="image of menu ${this._menu.name}" />
         <p  tabindex="0"class="name-menu">${this._menu.name}</p>
       `;
   }

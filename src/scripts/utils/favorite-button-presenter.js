@@ -28,7 +28,7 @@ const FavoriteButtonInitiator = {
   renderAddToFavorite() {
     this._favoriteButtonContainer.innerHTML = "<like-button></like-button>";
 
-    const favoriteButton = document.querySelector(".btn-favorite");
+    const favoriteButton = document.querySelector("#add-favorite-button");
     favoriteButton.addEventListener("click", async () => {
       await FavoriteResto.putResto(this._restaurant);
       this.render();
@@ -38,7 +38,7 @@ const FavoriteButtonInitiator = {
   renderMoveFromFavorite() {
     this._favoriteButtonContainer.innerHTML = "<unlike-button></unlike-button>";
 
-    const favoriteButton = document.querySelector(".btn-favorite");
+    const favoriteButton = document.querySelector("#btn-remove-favorite");
     favoriteButton.addEventListener("click", async () => {
       await FavoriteResto.deleteResto(this._restaurant.id);
       this.render();

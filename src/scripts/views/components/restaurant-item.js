@@ -20,11 +20,20 @@ class RestaurantItem extends HTMLElement {
       this._restaurant.name
     }</a>
                 </h1>
+                <div class="rating-map">
+               
                 <p tabindex="0" class="subtitle-content">
-                Kota ${this._restaurant.city} - Rating 
+                <i class="fa-solid fa-location-dot"></i> Kota ${
+                  this._restaurant.city
+                }
+                </p>
+                <p tabindex="0" class="subtitle-content">
+                 
                 <i class="fa-sharp fa-solid fa-star"></i>
                 ${this._restaurant.rating}
                 </p>
+                </div>
+                
                 <p tabindex="0" class="description-content">
                 ${this._restaurant.description.substr(0, 100)}...</p>
                 
