@@ -21,8 +21,9 @@ describe("Searching restaurants", () => {
   };
   const searchRestaurant = (query) => {
     const keywordElement = document.getElementById("keyword");
+    const buttonElement = document.querySelector(".searchButton");
     keywordElement.value = query;
-    keywordElement.dispatchEvent(new Event("change"));
+    buttonElement.dispatchEvent(new Event("click"));
   };
 
   beforeEach(() => {

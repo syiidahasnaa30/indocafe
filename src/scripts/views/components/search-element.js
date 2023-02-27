@@ -5,7 +5,7 @@ class SearchElement extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <form class="search-content" action="">
+    <form class="search-content" action="post">
     <input
       tabindex="0"
       type="text"
@@ -14,7 +14,7 @@ class SearchElement extends HTMLElement {
       id="keyword"
     />
     <button class="searchButton">Search</button>
-  </form>
+  </form >
       `;
   }
 }

@@ -3,6 +3,7 @@ import "../../components/restaurant-list";
 
 class FavoriteRestoSearchView {
   getTemplate() {
+    console.log("masuk");
     return `
         <h1 tabindex="0" class="favorite-pages">Your Favorite Restaurants</h1>
         <search-element></search-element>
@@ -12,8 +13,10 @@ class FavoriteRestoSearchView {
 
   runWhenUserIsSearching(callback) {
     const queryElement = document.getElementById("keyword");
-    queryElement.addEventListener("change", (event) => {
-      callback(event.target.value);
+    const buttonElement = document.querySelector(".searchButton");
+    buttonElement.addEventListener("click", (event) => {
+      callback(queryElement.value);
+      event.preventDefault();
     });
   }
 
@@ -24,10 +27,13 @@ class FavoriteRestoSearchView {
     } else {
       html = this.getNotFoundElement();
     }
-    document.querySelector("#content-favorite-page").appendChild(html);
-    document
-      .getElementById("content-favorite-page")
-      .dispatchEvent(new Event("restaurants:updated"));
+
+    const content = document.querySelector("#content-favorite-page");
+    if (content.hasChildNodes()) {
+      content.removeChild(content.firstChild);
+    }
+    content.appendChild(html);
+    content.dispatchEvent(new Event("restaurants:updated"));
   }
 
   getRestaurantElement(restaurants) {
@@ -38,7 +44,7 @@ class FavoriteRestoSearchView {
 
   getNotFoundElement() {
     const notFoundElement = document.createElement("not-found-element");
-    notFoundElement.message = "Restaurant Not Found";
+    notFoundElement.message = "Your Favorite Restaurants Not Found";
     return notFoundElement;
   }
 }
