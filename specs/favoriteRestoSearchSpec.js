@@ -52,9 +52,9 @@ describe("Searching restaurants", () => {
         });
 
       favoriteResto.searchResto.withArgs("resto a").and.returnValues([
-        { id: 111, name: "resto abc" },
-        { id: 222, name: "ada juga resto abcde" },
-        { id: 333, name: "ini juga boleh resto a" },
+        { id: 111, name: "resto abc", description: "" },
+        { id: 222, name: "ada juga resto abcde", description: "" },
+        { id: 333, name: "ini juga boleh resto a", description: "" },
       ]);
 
       searchRestaurant("resto a");
@@ -76,9 +76,9 @@ describe("Searching restaurants", () => {
         });
 
       favoriteResto.searchResto.withArgs("resto a").and.returnValues([
-        { id: 111, name: "resto abc" },
-        { id: 222, name: "ada juga resto abcde" },
-        { id: 333, name: "ini juga boleh resto a" },
+        { id: 111, name: "resto abc", description: "" },
+        { id: 222, name: "ada juga resto abcde", description: "" },
+        { id: 333, name: "ini juga boleh resto a", description: "" },
       ]);
 
       searchRestaurant("resto a");
@@ -95,7 +95,7 @@ describe("Searching restaurants", () => {
 
       favoriteResto.searchResto
         .withArgs("resto a")
-        .and.returnValues([{ id: 111 }]);
+        .and.returnValues([{ id: 111, description: "" }]);
 
       searchRestaurant("resto a");
     });

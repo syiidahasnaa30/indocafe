@@ -59,12 +59,12 @@ describe("Showing all favorite restaurants", () => {
         {
           id: 11,
           name: "A",
-          overview: "Sebuah resto A",
+          description: "Sebuah resto A",
         },
         {
           id: 22,
           name: "B",
-          overview: "Sebuah resto B",
+          description: "Sebuah resto B",
         },
       ]);
       new FavoriteRestoShowPresenter({

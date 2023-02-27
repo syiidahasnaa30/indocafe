@@ -4,10 +4,9 @@ import "../../components/restaurant-list";
 class FavoriteRestoSearchView {
   getTemplate() {
     return `
+        <h1 tabindex="0" class="favorite-pages">Your Favorite Restaurants</h1>
         <search-element></search-element>
-        <div id="content-favorite-page" style="min-height:70vh">
-        <restaurant-list></restaurant-list>
-        </div>
+        <div id="content-favorite-page" style="min-height:70vh"></div>
       `;
   }
 
@@ -19,32 +18,22 @@ class FavoriteRestoSearchView {
   }
 
   showRestaurant(restaurants) {
+    let html;
     if (restaurants.length > 0) {
-      document.querySelector(
-        "restaurant-list"
-      ).innerHTML = this.getRestaurantElement(restaurants);
+      html = this.getRestaurantElement(restaurants);
     } else {
-      document
-        .querySelector("#content-favorite-page")
-        .appendChild(this.getNotFoundElement());
+      html = this.getNotFoundElement();
     }
-
+    document.querySelector("#content-favorite-page").appendChild(html);
     document
       .getElementById("content-favorite-page")
       .dispatchEvent(new Event("restaurants:updated"));
   }
 
   getRestaurantElement(restaurants) {
-    const element = restaurants.reduce(
-      (carry, restaurant) =>
-        carry.concat(`<li class="restaurant-item">
-          <h1 class="title-content"><a href="">${
-            restaurant.name || "-"
-          }</a></h1>
-          </li>`),
-      ""
-    );
-    return element;
+    const restaurantsElement = document.createElement("restaurant-list");
+    restaurantsElement.restaurants = restaurants;
+    return restaurantsElement;
   }
 
   getNotFoundElement() {
