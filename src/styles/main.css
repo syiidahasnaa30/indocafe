@@ -104,7 +104,7 @@ nav {
   border-radius: 5px;
   border-color: #00aa95;
   margin: 5px;
-  border-style: none;
+  /* border-style: none; */
 }
 .searchButton {
   color: #fff;

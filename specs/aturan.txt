@@ -1,18 +1,15 @@
-Skenario Menyukai restaurant:
+Skenario mencari restaurant favorite
 
-1. restaurant belum disukai.
-V 2. Widget untuk menyukai restaurant ditampilkan
-V 3. Widget menyukai restaurant ditekan oleh pengguna.
-4. restaurant ditambahkan ke daftar restaurant yang disukai:
-V    a. Ternyata restaurant sudah disukai:
-            Tidak perlu menyimpan kembali.
-    b. Data restaurant tidak memiliki ID:
-            Sistem tidak memproses penyimpanan.
-            Sistem tidak gagal.
-            
-Skenario Batal Menyukai restaurant:
-V 1. restaurant sudah disukai.
-V 2. Widget untuk batal menyukai restaurant ditampilkan.
-3. Widget pembatalan ditekan oleh pengguna.
-4. restaurant dihapus dari daftar restaurant yang disukai:
-    a. Ternyata restaurant tidak ada dalam daftar restaurant yang disukai.
+V 1. Pengguna  memasukkan judul film yang dicari.
+2. Film yang dicari ditampilkan.
+        Bila film tidak ada, tampilkan informasi bahwa tidak ada film yang ditemukan.
+
+1. Bila pengguna memasukkan query 'film A', maka:
+   v     Presenter akan meminta ke model untuk memberikan film yang disukai dengan yang cocok untuk pencarian 'film A'.
+        Presenter akan menampilkan View (DOM) semua film yang dikembalikan oleh Model.
+2. Bila pengguna memasukkan query kosong, maka:
+        Presenter akan meminta Model untuk memberikan semua film yang disukai.
+        Presenter akan menampilkan ke View semua film yang disukai yang telah diberikan oleh Model.
+3. Bila pengguna memasukkan query, dan tidak ada film yang cocok, maka:
+        Presenter meminta Model untuk mencari film.
+        Presenter akan menampilkan informasi tidak ada film yang ditemukan pada View.

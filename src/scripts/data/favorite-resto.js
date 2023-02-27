@@ -28,5 +28,16 @@ const FavoriteResto = {
   async deleteResto(id) {
     return (await dbPromise).delete(OBJECT_STORE_NAME, id);
   },
+
+  async searchResto(query) {
+    return (await this.getAllRestaurant()).filter((restaurant) => {
+      const loweredRestoName = (restaurant.name || "-").toLowerCase();
+      const jammedRestoName = loweredRestoName.replace(/\s/g, "");
+
+      const loweredCaseQuery = query.toLowerCase();
+      const jammedQuery = loweredCaseQuery.replace(/\s/g, "");
+      return jammedRestoName.indexOf(jammedQuery) !== -1;
+    });
+  },
 };
 export default FavoriteResto;

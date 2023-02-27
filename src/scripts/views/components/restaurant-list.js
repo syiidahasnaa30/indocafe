@@ -11,6 +11,7 @@ class RestaurantList extends HTMLElement {
       restaurantElemen.restaurant = restaurant;
       restaurantElemen.tabIndex = "0";
       restaurantElemen.className = "restaurant-item";
+      restaurantElemen.classList = "restaurant-item";
       this.appendChild(restaurantElemen);
     });
   }

@@ -50,6 +50,18 @@ const itActsAsFavoriteRestoModel = (favoriteResto) => {
       { id: 3 },
     ]);
   });
+
+  it("should be able to search for restaurants", async () => {
+    favoriteResto.putResto({ id: 1, name: "resto a" });
+    favoriteResto.putResto({ id: 2, name: "resto abc" });
+    favoriteResto.putResto({ id: 3, name: "ini mah resto abcd" });
+
+    expect(await favoriteResto.searchResto("resto a")).toEqual([
+      { id: 1, name: "resto a" },
+      { id: 2, name: "resto abc" },
+      { id: 3, name: "ini mah resto abcd" },
+    ]);
+  });
 };
 
 export { itActsAsFavoriteRestoModel };
