@@ -15,7 +15,7 @@ const createDetailRestaurant = {
     this._detailContainer.innerHTML = `
     <div class="resto-header">
         <img
-        class="img-detail-page"
+        class="img-detail-page lazyload"
         tabindex="0" 
         src=${CONFIG.BASE_IMAGE_URL + this._restaurant.pictureId}
         alt ="image of ${this._restaurant.name}"

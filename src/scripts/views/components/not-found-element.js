@@ -6,7 +6,7 @@ class NotFound extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <img tabindex="0" src="./images/dissapointed.png" alt="not found image"/>
+      <img tabindex="0" class="lazyload" src="./images/dissapointed.png" alt="not found image"/>
       <h2 tabindex="0">Sorry</h2>
       <p tabindex="0" class="message">
         ${this._message}

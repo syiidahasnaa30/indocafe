@@ -1,6 +1,6 @@
 const assert = require("assert");
 
-Feature("LikingResto");
+Feature("DislikingResto");
 Before(({ I }) => {
   I.amOnPage("/#/favorites");
 });

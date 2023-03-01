@@ -4,10 +4,6 @@ Feature("LikingResto");
 Before(({ I }) => {
   I.amOnPage("/#/favorites");
 });
-Scenario("showing empty favorite resto", ({ I }) => {
-  I.seeElement("#keyword");
-  I.see("Your Favorite Restaurants Not Found", "not-found-element p");
-});
 
 Scenario("liking one resto", async ({ I }) => {
   I.see("Your Favorite Restaurants Not Found", "not-found-element p");

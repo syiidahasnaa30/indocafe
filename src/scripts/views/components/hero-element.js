@@ -9,7 +9,7 @@ class HeroElement extends HTMLElement {
     <div class="content-hero">
     <div class="logo-container">
       <img tabindex="0" 
-        class="logo" 
+        class="logo lazyload" 
         src="./images/logo-only.png" 
         alt="Indocafe logo" />
       <h1 tabindex="0" style="color: #00aa95; font-weight: 600">Indocafe</h1>
