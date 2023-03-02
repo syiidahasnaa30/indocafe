@@ -13,7 +13,7 @@ not-found-element {
 not-found-element > h2 {
   color: #ff971d;
 }
-not-found-element > img {
+not-found-element img {
   width: 200px;
   height: 200px;
   text-align: center;

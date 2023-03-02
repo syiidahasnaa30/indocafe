@@ -5,8 +5,10 @@ class FavoriteRestoSearchView {
   getTemplate() {
     console.log("masuk");
     return `
-        <h1 tabindex="0" class="favorite-pages">Your Favorite Restaurants</h1>
-        <search-element></search-element>
+        <div  class="favorite-pages">
+          <h1 tabindex="0">Your Favorite Restaurants</h1>
+          <search-element></search-element>
+        </div>
         <div id="content-favorite-page" style="min-height:70vh"></div>
       `;
   }

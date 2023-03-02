@@ -33,9 +33,6 @@ nav {
   padding: 5px 15px 5px 15px;
 }
 
-.nav-logo > img {
-  width: 100%;
-}
 .nav-logo {
   margin: auto 0 auto 0;
 }
@@ -71,7 +68,7 @@ nav {
 .hero-element {
   height: 0vh;
 }
-.hero-element > img {
+.hero-element img {
   width: 100%;
   height: 70vh;
 }

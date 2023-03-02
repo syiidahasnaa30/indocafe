@@ -7,7 +7,6 @@ class RestaurantItem extends HTMLElement {
   }
   render() {
     this.innerHTML = `
-    
             <img
                 tabindex="0"
                 class="image-content lazyload"
