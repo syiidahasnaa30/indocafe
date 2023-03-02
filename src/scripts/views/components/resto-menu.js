@@ -6,10 +6,11 @@ class RestoMenu extends HTMLElement {
   render() {
     this.innerHTML = `
         <picture>
-          <source type="image/webp" srcset="./images/beverages.webp" />
-          <source type="image/png" srcset="./images/beverages.png" />
+          <source class="lazyload"  type="image/webp" data-srcset="./images/beverages.webp" />
+          <source class="lazyload"  type="image/png" data-srcset="./images/beverages.png" />
           <img tabindex="0"
           class="lazyload" 
+          data-src="./images/beverages.png"
           src="./images/beverages.png" 
           alt="image of menu ${this._menu.name}"
           width="100%" />

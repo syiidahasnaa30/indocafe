@@ -10,7 +10,9 @@ class RestaurantItem extends HTMLElement {
             <img
                 tabindex="0"
                 class="image-content lazyload"
-                src=${CONFIG.BASE_IMAGE_URL + this._restaurant.pictureId || ""}
+                data-src=${
+                  CONFIG.BASE_IMAGE_URL + this._restaurant.pictureId || ""
+                }
                 alt="Image of ${this._restaurant.name || "-"} restaurant"
             />
             <div class="content">
