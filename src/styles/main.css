@@ -69,28 +69,27 @@ nav {
 
 /* Jumbotron - Hero Element */
 .hero-element {
+  height: 0vh;
+}
+.hero-element > img {
   width: 100%;
-  display: flex;
-  min-height: 70vh;
-  align-items: flex-end;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-image: url("../public/images/heros/hero-image_4.jpg");
-  background-size: cover;
-  background-position: center;
+  height: 70vh;
 }
-
 .content-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 70%;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  padding: 50px;
+  min-height: 70vh;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
-
 .logo {
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
+}
+search-element {
+  width: 100%;
 }
 /* Search Content */
 

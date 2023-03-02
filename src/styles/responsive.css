@@ -1,5 +1,5 @@
 @media screen and (min-width: 1200px) {
-  hero-element > img {
+  .hero-element > img {
     min-width: 1000px;
   }
 }

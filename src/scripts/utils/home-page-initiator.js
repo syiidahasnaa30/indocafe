@@ -1,5 +1,4 @@
 import RestaurantData from "../data/restaurant-data";
-import "../views/components/restaurant-list";
 import "../views/components/not-found-element";
 
 const HomePageInitiator = {
@@ -20,15 +19,13 @@ const HomePageInitiator = {
 
   async renderRestaurants() {
     const restaurants = await RestaurantData.getRestaurants();
-    const listRestaurantElement = document.createElement("restaurant-list");
-    listRestaurantElement.restaurants = restaurants;
-    this._contentHomeContainer.appendChild(listRestaurantElement);
+    this._contentHomeContainer.restaurants = restaurants;
   },
 
   renderNotFound(message) {
     const notFoundElement = document.createElement("not-found-element");
     notFoundElement.message = message;
-    this._contentContainer.appendChild(notFoundElement);
+    this._contentHomeContainer.appendChild(notFoundElement);
   },
 };
 
