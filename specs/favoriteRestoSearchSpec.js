@@ -2,7 +2,7 @@ import FavoriteRestoSearchPresenter from "../src/scripts/views/pages/favorite-re
 import FavoriteResto from "../src/scripts/data/favorite-resto";
 import FavoriteRestoSearchView from "../src/scripts/views/pages/favorite-resto/favorite-resto-search-view";
 
-describe("Searching restaurants", () => {
+describe("Searching favorite restaurants", () => {
   let presenter;
   let favoriteResto;
   let view;

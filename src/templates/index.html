@@ -15,13 +15,22 @@
       <nav>
         <div class="nav-logo">
           <picture>
-            <source type="image/webp" srcset="./images/logo-nobg.webp" />
-            <source type="image/png" srcset="./images/logo-nobg.png" />
+            <source
+              class="lazyload"
+              type="image/webp"
+              data-srcset="./images/logo-nobg.webp"
+            />
+            <source
+              class="lazyload"
+              type="image/png"
+              data-srcset="./images/logo-nobg.png"
+            />
             <img
+              class="lazyload"
               alt=""
               data-src="./images/logo-nobg.png"
-              class="lazyload"
               width="100%"
+              height=""
             />
           </picture>
         </div>
