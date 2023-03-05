@@ -1,6 +1,7 @@
 import CONFIG from "../../globals/config";
 import "../components/resto-menu-list";
 import "../components/reviews";
+import "../components/review-form";
 import FavoriteButtonInitiator from "../../utils/favorite-button-presenter";
 import FavoriteResto from "../../data/favorite-resto";
 const createDetailRestaurant = {
@@ -60,9 +61,8 @@ const createDetailRestaurant = {
         <resto-menu-list id="drinks"></resto-menu-list>
     </div>
     <div class="review-section">
-    <h2 tabindex="0">Customer Review's</h2>
-    <reviews-element></reviews-element>
-   
+      <h2 tabindex="0">Customer Review's</h2>
+      <reviews-element></reviews-element>
     </div>
     `;
   },

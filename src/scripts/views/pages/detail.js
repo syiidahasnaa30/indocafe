@@ -2,6 +2,7 @@ import UrlParser from "../../routes/url-parser";
 import RestaurantData from "../../data/restaurant-data";
 import "../components/not-found-element";
 import createDetailRestaurant from "../template/create-detail-restaurant";
+import "../../../styles/detail.css";
 
 const Detail = {
   async render() {

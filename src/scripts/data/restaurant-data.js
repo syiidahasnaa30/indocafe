@@ -19,6 +19,26 @@ class RestaurantData {
     const responseJSON = await response.json();
     return responseJSON.restaurants;
   }
+
+  static async addReview(review) {
+    try {
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-Type":
+            "application/x-www-form-urlencoded | application/json",
+        },
+        body: JSON.stringify(review),
+      };
+
+      const response = await fetch(API_ENDPOINT.addReview, options);
+      const responseJson = await response.json();
+      console.log(responseJSON);
+      return responseJson;
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
 export default RestaurantData;

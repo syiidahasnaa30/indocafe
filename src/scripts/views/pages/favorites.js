@@ -2,7 +2,7 @@ import FavoriteRestoSearchPresenter from "./favorite-resto/favorite-resto-search
 import FavoriteRestoShowPresenter from "./favorite-resto/favorite-resto-show-presenter";
 import FavoriteResto from "../../data/favorite-resto";
 import FavoriteRestoSearchView from "./favorite-resto/favorite-resto-search-view";
-
+import "../../../styles/favorite.css";
 const view = new FavoriteRestoSearchView();
 const Favorites = {
   async render() {

@@ -1,3 +1,4 @@
+import "../../../styles/not-found.css";
 class NotFound extends HTMLElement {
   set message(message) {
     this._message = message;

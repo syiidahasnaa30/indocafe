@@ -135,7 +135,7 @@ review-element img {
   font-weight: 400;
 }
 
-.create-review {
+.submitButton {
   background-color: #00cc76;
   color: white;
   padding: 10px;
@@ -143,4 +143,22 @@ review-element img {
   min-width: 44px;
   border: none;
   border-radius: 5px;
+  margin-top: 5px;
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea {
+  border-radius: 5px;
+  margin: 5px;
+  min-height: 44px;
+  min-width: 44px;
+  border-width: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+textarea {
+  padding: 16px;
 }

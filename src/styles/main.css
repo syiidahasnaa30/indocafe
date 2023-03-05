@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 body {
   font-family: "Poppins", sans-serif;
   padding: 0px;
@@ -96,10 +95,13 @@ search-element {
   grid-template-columns: 1fr;
 }
 #keyword {
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   border-radius: 5px;
   border-color: #00aa95;
   margin: 5px;
+  min-height: 44px;
+  min-width: 44px;
   /* border-style: none; */
 }
 .searchButton {
