@@ -6,8 +6,8 @@ class RestoMenu extends HTMLElement {
   render() {
     this.innerHTML = `
         <picture>
-          <source class="lazyload"  type="image/webp" data-srcset="./images/beverages.webp" />
-          <source class="lazyload"  type="image/png" data-srcset="./images/beverages.png" />
+          <source  type="image/webp" data-srcset="./images/beverages.webp" />
+          <source  type="image/png" data-srcset="./images/beverages.png" />
           <img tabindex="0"
           class="lazyload" 
           data-src="./images/beverages.png"
