@@ -8,8 +8,8 @@ class HeroElement extends HTMLElement {
     this.innerHTML = `
       <div class="hero-element">
         <picture>
-          <source class="lazyload" type="image/webp" data-srcset="./images/heros/hero-image_4.webp" />
-          <source media="(max-width: 600px)" class="lazyload" type="image/heros/jpeg" data-srcset="./images/hero-image_4-small.jpg" />
+          <source media="(max-width: 600px)" type="image/heros/jpeg" data-srcset="./images/hero-image_4-small.jpg" />
+          <source media="(min-width: 601px)" type="image/webp" data-srcset="./images/heros/hero-image_4.webp" />
           <img class="lazyload" data-src="./images/heros/hero-image_4-large.jpg" alt="" />
         </picture>
       </div>

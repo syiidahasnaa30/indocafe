@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build-image": "node sharp.js",
     "build": "webpack --config webpack.prod.js",
     "test": "karma start",
     "lint": "eslint ./src",
-    "serve": "http-server dist",
+    "serve": "npm run build-image && http-server dist",
     "build-serve": "npm run build && npm run serve",
-    "build-image": "node sharp.js",
     "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
