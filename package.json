@@ -6,7 +6,7 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build-image": "node sharp.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && npm run build-image",
     "test": "karma start",
     "lint": "eslint ./src",
     "serve": "npm run build-image && http-server dist",
